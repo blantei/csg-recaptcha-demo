@@ -16,8 +16,15 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+        implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect'
+        implementation platform('com.amazonaws:aws-java-sdk-bom:1.11.1030')
+        implementation 'com.amazonaws:aws-java-sdk-lambda'
 }
 
 test {
 	useJUnitPlatform()
+}
+
+bootJar {
+    launchScript()
 }

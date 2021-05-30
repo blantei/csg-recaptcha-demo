@@ -1,10 +1,10 @@
-package ca.toronto.csg.recapchademo;
+package ca.toronto.csg.recaptchademo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RecapchaDemoApplicationTests {
+class RecaptchaDemoApplicationTests {
 
 	@Test
 	void contextLoads() {

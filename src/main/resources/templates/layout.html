@@ -33,8 +33,10 @@
                         },
                         dataType: 'json',
                         success: function(data) {
-                            console.info(data);
-                            alert(JSON.stringify(data));
+
+                            $("#server").text(data.server_ip);
+                            $("#server_date").text(data.server_date);
+        
                         }
         
                     });
